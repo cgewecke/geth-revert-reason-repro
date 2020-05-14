@@ -1,0 +1,25 @@
+{
+  "name": "geth-revert-reason-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "geth:1.9.14": "geth-dev-assistant --tag 'v1.9.14' --accounts 0; node ./index.js; docker stop geth-client;",
+    "geth:1.9.13": "geth-dev-assistant --tag 'v1.9.13' --accounts 0; node ./index.js; docker stop geth-client;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgewecke/geth-revert-reason-repro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgewecke/geth-revert-reason-repro/issues"
+  },
+  "homepage": "https://github.com/cgewecke/geth-revert-reason-repro#readme",
+  "dependencies": {
+    "geth-dev-assistant": "^0.1.4",
+    "web3": "^1.2.7"
+  }
+}
